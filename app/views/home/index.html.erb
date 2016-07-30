@@ -1,0 +1,7 @@
+<h1>Multi Blog</h1>
+
+List of Blogs:
+<br>
+<% @blogs.each do |b| %>
+	<%= b.title %> | <%= b.slug %> <br>
+<% end %>
