@@ -1,7 +1,10 @@
-<h1>Multi Blog</h1>
 
-List of Blogs:
-<br>
-<% @blogs.each do |b| %>
-	<%= b.title %> | <%= b.slug %> <br>
+<div class="m-t-1">
+    <h1>Multi Blog</h1>
+</div>
+
+<% if user_signed_in? %>
+	<%= render 'user' %>
+<% else %>
+	<%= render 'visitor' %>
 <% end %>

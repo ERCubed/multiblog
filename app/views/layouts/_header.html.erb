@@ -1,0 +1,43 @@
+<div class="pos-f-t">
+  <div class="collapse" id="navbar-header">
+    <div class="container bg-inverse p-a-1">
+      <h3>Collapsed content</h3>
+      <p>Toggleable via the navbar brand.</p>
+    </div>
+  </div>
+  <nav class="navbar navbar-light navbar-static-top bg-faded">
+    <div class="container">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+        <%= link_to 'Multi Blog', root_path, :class => 'navbar-brand' %>
+        <ul class="nav navbar-nav">
+          
+          <% if user_signed_in? %>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Nav item <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Another nav item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">More nav</a>
+          </li>
+          <li class="nav-item">
+          	<%= link_to "Log out", destroy_user_session_path, :method => :delete, :class => "nav-link" %>
+          </li>
+          <% end %>
+        </ul>
+
+        <ul class="nav navbar-nav pull-xs-right">
+        	<li class="nav-item">
+				<%= nav_welcome %>
+			</li>
+		</ul>
+
+
+      </div>
+    </div>
+  </nav>
+</div>

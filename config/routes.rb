@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
 
   resources :posts
-  resources :blogs
-  
+
   devise_for :users
   resources :users
 
+
+  resources :blogs
   root 'home#index'
 
 
