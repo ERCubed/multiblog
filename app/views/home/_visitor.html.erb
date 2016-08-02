@@ -1,4 +1,4 @@
 <h2>See what everyone is blogging about!</h2>
 <% @blogs.each do |b| %>
-	<%= b.title %> | Link To <%= b.slug %> <br>
+	<h4><%= link_to b.title, b.slug %> </h4>
 <% end %>
