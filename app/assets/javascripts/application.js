@@ -3,4 +3,5 @@
 //= require tether
 //= require bootstrap
 //= require turbolinks
+//= require bootsy
 //= require_tree .
