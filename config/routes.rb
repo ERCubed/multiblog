@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get '/:slug', to: "blogs#show"
+  get '/:slug/admin', to: "admin/blogs#index"
 
 end
