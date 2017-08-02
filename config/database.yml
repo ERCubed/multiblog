@@ -17,7 +17,9 @@ test:
 production:
   adapter: postgresql
   database: multiblog_production
+  host: ec2-107-21-109-15.compute-1.amazonaws.com
+  port: 5432
   pool: 5
   timeout: 5000
-  username: er3_postgres
-  password: 1Password!
+  username: tnidjdvwvtcpve
+  password: f822b521bbd5647f2fdab9529559fc2600d1db208babf9127eacc076b7be50af
