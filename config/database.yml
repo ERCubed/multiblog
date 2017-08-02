@@ -1,17 +1,23 @@
 development:
-  adapter: sqlite3
+  adapter: postgresql
+  database: multiblog_development
   pool: 5
   timeout: 5000
-  database: db/development.sqlite3
+  username: er3
+  password: password1
 
 test:
-  adapter: sqlite3
+  adapter: postgresql
+  database: multiblog_test
   pool: 5
   timeout: 5000
-  database: db/test.sqlite3
+  username: er3
+  password: password1
 
 production:
   adapter: postgresql
   database: multiblog_production
   pool: 5
   timeout: 5000
+  username: er3_postgres
+  password: 1Password!
