@@ -19,7 +19,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Gems added for this project.
 gem 'puma'
-gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'bootstrap', '~> 4.3.1'
 gem 'devise'
 gem 'bootsy'
 
